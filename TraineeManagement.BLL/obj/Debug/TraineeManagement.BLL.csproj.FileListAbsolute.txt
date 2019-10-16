@@ -1,0 +1,35 @@
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.BLL.dll.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.BLL.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.BLL.pdb
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\EntityFramework.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\EntityFramework.SqlServer.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Models.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Repository.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Models.pdb
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Models.dll.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Repository.pdb
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Repository.dll.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\EntityFramework.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\EntityFramework.SqlServer.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\obj\Debug\TraineeManagement.BLL.csprojAssemblyReference.cache
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\obj\Debug\TraineeManagement.BLL.csproj.CoreCompileInputs.cache
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\obj\Debug\TraineeManagement.BLL.csproj.CopyComplete
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\obj\Debug\TraineeManagement.BLL.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement.BLL\obj\Debug\TraineeManagement.BLL.pdb
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.BLL.dll.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.BLL.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.BLL.pdb
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\EntityFramework.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\EntityFramework.SqlServer.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Models.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Repository.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Models.pdb
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Models.dll.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Repository.pdb
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\TraineeManagement.Repository.dll.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\EntityFramework.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\bin\Debug\EntityFramework.SqlServer.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\obj\Debug\TraineeManagement.BLL.csprojAssemblyReference.cache
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\obj\Debug\TraineeManagement.BLL.csproj.CopyComplete
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\obj\Debug\TraineeManagement.BLL.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement.BLL\obj\Debug\TraineeManagement.BLL.pdb

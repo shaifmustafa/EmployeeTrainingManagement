@@ -1,0 +1,1114 @@
+﻿
+@{
+    ViewBag.Title = "Advance Information";
+}
+<!-- #region Table Data -->
+<div class="col-xs-12 ">
+    <div class="widget-box">
+        <div class="widget-body">
+            <div class="widget-main">
+                <input type="hidden" id="hidden_area" />
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <div class="widget-box ">
+
+                            <div class="widget-header">
+                                <h4 class="widget-title">@ViewBag.Title</h4>
+
+                                <div class="widget-toolbar">
+
+                                    @*<a href="javascript:ShowInactive()">
+                                            <i class="ace-icon fa fa-ban"></i>
+                                        </a>*@
+
+                                    <a href="javascript:search()">
+                                        <i class="ace-icon fa fa-search"></i>
+                                    </a>
+
+
+                                    <a href="javascript:ReloadTable()">
+                                        <i class="ace-icon fa fa-refresh"></i>
+                                    </a>
+
+                                    <a href="javascript:ShowInputModal()">
+                                        <i class="ace-icon fa fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="widget-body">
+                                <div class="widget-main">
+                                    <table id="Advance" class="table table-striped table-bordered table-hover table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th>Employee Name</th>
+                                                <th>Advance Type</th>
+                                                <th>Memo Code</th>
+                                                <th>From Date</th>
+                                                <th>To Date</th>
+                                                <th>Total</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #endregion -->
+<!--#region Input Modal-->
+
+<div class=" modal fade in" tabindex="-1" role="dialog" id="inputModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 style="text-align:center;" class="modal-title"> <b>@ViewBag.Title</b></h5>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" id="inputForm">
+                    <input type="hidden" id="iId" name="Id" value="0" class="form-control" />
+
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <input style="text-align:center;" type="text" name="MemoNo" id="iMemoNo" readonly="readonly" />
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="form-group">
+
+                        <div class="col-sm-4 col-sm-offset-2">
+                            Travelling &nbsp;<input type="radio" id="Travelling" name="AdvanceType" value="Travelling" />
+                        </div>
+
+                        <div class="col-sm-4 col-sm-offset-2">
+                            Training &nbsp;<input type="radio" id="Training" name="AdvanceType" value="Training" />
+                        </div>                        
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="iEmployeeCode"> Employee Code</label>
+
+                        <div class="col-sm-5">
+                            <input type="text" id="iEmployeeCode" name="Code" placeholder="Employee Code" class="form-control" />
+                        </div>
+
+                        <div class="col-sm-4">
+                            <button type="button" id="employeeSearchButton" class="fa fa-search" onclick="searchEmployee('EmpCode')"></button>
+                        </div>
+
+                    </div>
+
+                    <br />
+
+                    <div class="form-group">
+
+                        <label class="col-sm-3 control-label no-padding-right" for="iEmployeeId"> Name</label>
+
+                        <div class="col-sm-3">
+                            <select class="form-control" id="iEmployeeId" name="EmployeeId" required></select>
+                        </div>
+
+                        <label class="col-md-3 control-label no-padding-right" for="iEmployeeGrade"> Grade</label>
+
+                        <div class="col-md-3">
+                            <input type="text" readonly id="iEmployeeGrade" name="GradeId" placeholder="Employee Code" class="form-control" />
+                            @*<select class="form-control" id="iEmployeeGrade" name="GradeId" required></select>*@
+                        </div>
+
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="iFromDate"> From Date </label>
+                        <div class="col-sm-3">
+                            <input type="text" id="iFromDate" name="FromDate" placeholder="From Date" class="form-control" required />
+                        </div>
+
+
+                        <label class="col-sm-3 control-label no-padding-right" for="iToDate"> To Date </label>
+                        <div class="col-sm-3">
+                            <input type="text" id="iToDate" name="ToDate" placeholder="To Date" class="form-control" required />
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" id="lDistrictId" for="iDistrictId"> District</label>
+
+                        <div class="col-sm-3">
+                            <select class="form-control" id="iDistrictId" name="DistrictId" required></select>
+                        </div>
+
+                        <label class="col-sm-3 control-label no-padding-right" id="lSubDistrictId" for="iSubDistrictId"> Sub District</label>
+
+                        <div class="col-sm-3">
+                            <select class="form-control" id="iSubDistrictId" name="SubDistrictId" required></select>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" id="lTrainer" for="iTrainer"> Trainer</label>
+
+                        <div class="col-sm-3">
+                            <input type="text" id="iTrainer" name="Trainer" placeholder="Location" class="form-control" required />
+                        </div>
+
+
+                        <label class="col-sm-3 control-label no-padding-right" id="lTopic" for="iTopic"> Topic </label>
+
+                        <div class="col-sm-3">
+                            <input type="text" id="iTopic" name="Topic" placeholder="Description" class="form-control" required />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="iLocation"> Location</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" id="iLocation" name="Location" placeholder="Location" class="form-control" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="iDescription"> Description </label>
+
+                        <div class="col-sm-9">
+                            <textarea type="text" id="iDescription" name="Description" placeholder="Description" class="form-control"> </textarea>
+                        </div>
+                    </div>
+
+                    <br />
+                    <br />
+
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" id="ilPurposeId" for="iPurposeId"> Purpose</label>
+
+                        <div class="col-sm-3">
+                            <select class="form-control" id="iPurposeId" name="PurposeId"></select>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <input type="number" id="iQty" name="Quantity" placeholder="Qty" class="form-control" />
+                        </div>
+
+                        <div class="col-sm-3">
+                            <input type="number" id="iAmount" name="Amount" placeholder="Amount" class="form-control" />
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row" style="float:right;">
+                        <div class="col-sm-10">
+                            <div class="text-right">
+                                <button type="button" id="addButton" class="btn-success">Add</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="panel-body">
+                        <table class="table table-bordered table-hover table-striped table-responsive">
+
+                            <thead>
+                                <tr>
+                                    <td>Sl.</td>
+                                    <td>Purpose</td>
+                                    <td>Qty</td>
+                                    <td>Amount</td>
+                                    <td>Line Total</td>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="AdvanceDetailsTable"></tbody>
+
+                        </table>
+                        <label class="col-sm-3 col-sm-offset-5" for="iGrandTotal"> Grand Total&nbsp;&nbsp;</label>
+                        <input style="float:right; text-align:center;" type="text" name="GrandTotal" id="iGrandTotal" readonly="readonly" />
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="submit_button" class="btn btn-primary" onclick="saveData()">Save</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#endregion-->
+
+
+<!--#region Search Modal-->
+
+<div class=" modal fade in" tabindex="-1" role="dialog" id="searchModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title">@ViewBag.Title</h5>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form" id="searchForm">
+                    <input type="hidden" id="sId" name="Id" value="0" class="form-control" />
+
+
+                    <div class="form-group">                        
+
+                        <label class="col-sm-3 control-label no-padding-right" for="sMemoNo"> From Date </label>
+
+                        <div class="col-sm-3">
+                            <input type="text" name="MemoNo" id="sMemoNo" placeholder="Memo Code" />
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        
+                        <label class="col-sm-3 control-label no-padding-right" for="iEmployeeId"> Employee</label>
+
+                        <div class="col-sm-5">
+                            <select class="form-control" id="sEmployeeId" name="EmployeeId" required></select>
+                        </div>
+
+                    </div>                    
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="iFromDate"> From Date </label>
+                        <div class="col-sm-3">
+                            <input type="text" id="sFromDate" name="FromDate" placeholder="From Date" class="form-control" required />
+                        </div>
+
+
+                        <label class="col-sm-3 control-label no-padding-right" for="iToDate"> To Date </label>
+                        <div class="col-sm-3">
+                            <input type="text" id="sToDate" name="ToDate" placeholder="To Date" class="form-control" required />
+                        </div>
+
+                    </div>                    
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="search_button" class="btn btn-primary" onclick="searchInTable()">Search</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#endregion-->
+
+
+
+
+
+@section scripts
+{
+    <script>
+
+        
+        $('#iEmployeeCode').keyup(function () {
+
+            if ($('#iEmployeeCode').val().length > 0) {
+                $('#employeeSearchButton').show();
+            }
+
+            else {
+                $('#employeeSearchButton').hide();
+            }
+        });
+
+
+        function searchEmployee(EmpCode) {
+            EmpCode = $('#iEmployeeCode').val();
+            console.log("Code = " + EmpCode);
+
+            $.ajax({
+                type: 'POST',
+                url: '/Employee/GetEmployeeDeatilsByCode',
+                data: { id: EmpCode }
+            })
+
+                .done(function (result) {
+                    if (result.Data != null) {
+                        console.log(result.Data);
+
+                        $.each(result.Data, function () {
+                            $('#iEmployeeGrade').empty();
+                            $('#iEmployeeId').val(this.Id);
+                            $('#iEmployeeGrade').val(this.GradeName);
+                            console.log("Employee = " + this.Name + "Grade = " + this.GradeName);
+                        });
+                    }
+
+                    if (result.Data == null || result.Data.length == 0) {
+
+                        $('#iEmployeeId').val('');
+                        $('#iEmployeeGrade').val('');
+                    }
+                })
+                .fail(function (xhr) {
+
+                    $('#iEmployeeId').val('');
+                    $('#iEmployeeGrade').val('');
+
+                    alert("Not Found");
+                });
+        }
+
+        var grandTotal = 0;
+
+        $('#addButton').click(function () {
+
+            createRowForAdvance();
+
+        });
+
+        function createRowForAdvance() {
+            var selectedItem = getSelectedItem();
+
+            var index = $('#AdvanceDetailsTable').children("tr").length;
+            var sl = index;
+
+            var indexcell = "<td style='display:none'> <input type='hidden' id='Index" + index + "' name='AdvanceDetails.Index' value='" + index + "' /> </td>"
+            var serialCell = "<td> " + (++sl) + " </td>"
+            var purposeCell = "<td> <input type='hidden' id='iPurposeId " + index + "' name='AdvanceDetails[" + index + "].PurposeId' value='" + selectedItem.iPurposeId + "' /> " + selectedItem.iPurposeName + " </td>"
+            var qtyCell = "<td> <input type='hidden' id='iQty " + index + "' name='AdvanceDetails[" + index + "].Quantity' value='" + selectedItem.iQty + "' /> " + selectedItem.iQty + " </td>"
+            var amountCell = "<td> <input type='hidden' id='iAmount " + index + "' name='AdvanceDetails[" + index + "].Amount' value='" + selectedItem.iAmount + "' /> " + selectedItem.iAmount + " </td>"
+            var lineTotalCell = "<td> <input type='hidden' id='iLineTotal " + index + "' name='AdvanceDetails[" + index + "].Total' value='" + selectedItem.iLineTotal + "' /> " + selectedItem.iLineTotal + " </td>"
+
+            //"<td> " + (selectedItem.iLineTotal) + " </td>"
+
+            var createNewRow = "<tr>" + indexcell + serialCell + purposeCell + qtyCell + amountCell + lineTotalCell + "</tr>"
+
+            $('#AdvanceDetailsTable').append(createNewRow);
+            $('#iGrandTotal').val(grandTotal);
+
+            $('#iPurposeId').val('');
+            $('#iQty').val('');
+            $('#iAmount').val('');
+        }
+
+        function getSelectedItem() {
+            var purposeName = $("#iPurposeId option:selected").text();
+            var purpose = $('#iPurposeId').val();
+            var qty = $('#iQty').val();
+            var amount = $('#iAmount').val();
+            var lineTotal = qty * amount;
+
+            grandTotal = grandTotal + lineTotal;
+            console.log(grandTotal);
+
+            var item = {
+
+                "iPurposeId": purpose,
+                "iPurposeName": purposeName,
+                "iQty": qty,
+                "iAmount": amount,
+                "iLineTotal": lineTotal
+            }
+
+            return item;
+        }
+
+
+
+
+
+        $(document).ready(function () {
+
+            $('#Travelling').prop("checked", true);
+
+            $('#iTrainer').hide();
+            $('#iTopic').hide();
+            $('#lTrainer').hide();
+            $('#lTopic').hide();
+
+
+            $('#iDistrictId').show();
+            $('#iSubDistrictId').show();
+            $('#lDistrictId').show();
+            $('#lSubDistrictId').show();
+        });
+
+        // region Load Employee Dropdown
+
+        $.ajax({
+            type: 'Get',
+            url: '/Employee/EmployeeList'
+        })
+            .done(function (result) {
+                if (result.status) {
+                    $('#iEmployeeId').append('<option value="">Select</option>');
+                    $('#sEmployeeId').append('<option value="">Select</option>');
+                    $.each(result.Data, function () {
+                        $('#sEmployeeId').append('<option value="' + this.Id + '">' + this.Name + '</option>');
+                        $('#iEmployeeId').append('<option value="' + this.Id + '">' + this.Name + '</option>');
+                    });
+                }
+            })
+            .fail(function (xhr) {
+                alert("error");
+            });
+
+        // endregion
+
+
+        // region Load Grade & Code
+
+        $('#iEmployeeId').change(function () {
+            var Id = $(this).val();
+           
+
+            $.ajax({
+                type: 'POST',
+                url: '/Employee/EmployeeGradeById',
+                data: { id: Id }
+            })
+                .done(function (result) {
+                    if (result.status) {
+                        $.each(result.Data, function () {
+                            //$('#iEmployeeGrade').empty();
+                            //$('#iEmployeeGrade').append('<option value="' + this.GradeId + '">' + this.GradeName + '</option>');
+                            $('#iEmployeeGrade').val(this.GradeName);
+                            console.log(this.GradeName);                            
+                        });
+                    }
+                })
+                .fail(function (xhr) {
+                    alert("error");
+                });
+
+
+            console.log(Id);
+
+
+            $('#iEmployeeCode').removeAttr('value');
+
+            $.ajax({
+                type: 'POST',
+                url: '/Employee/EmployeeCode',
+                data: { id: Id }
+            })
+                .done(function (result) {
+                    if (result.status) {
+                        $.each(result.Data, function () {
+                            $('#iEmployeeCode').val(this.Code);
+                            console.log("Employee Code: " + this.Code);
+                        });
+                    }
+                })
+                .fail(function (xhr) {
+                    alert("error");
+                });
+
+
+            console.log(Id);
+
+                  
+        });
+
+        // endregion
+
+
+
+        // region Load District Dropdown
+
+        $.ajax({
+            type: 'Get',
+            url: '/District/DistrictList'
+        })
+            .done(function (result) {
+                if (result.status) {
+                    $('#iDistrictId').append('<option value="">Select</option>');
+                    $.each(result.Data, function () {
+                        //$('#iSTenantName').append('<option value="' + this.Id + '">' + this.Name + '</option>');
+                        $('#iDistrictId').append('<option value="' + this.Id + '">' + this.Name + '</option>');
+                    });
+                }
+            })
+            .fail(function (xhr) {
+                alert("error");
+            });
+
+        // endregion
+
+
+        // region Load SubDistrict
+
+        $('#iDistrictId').change(function () {
+            var Id = $(this).val();
+            $('#iSubDistrictId').empty();
+
+            $.ajax({
+                type: 'POST',
+                url: '/District/SubDistrictList',
+                data: { id: Id }
+            })
+                .done(function (result) {
+                    if (result.status) {
+                        $.each(result.Data, function () {
+                            $('#iSubDistrictId').append('<option value="' + this.Id + '">' + this.Name + '</option>');
+                            console.log(this.Name);
+                        });
+                    }
+                })
+                .fail(function (xhr) {
+                    alert("error");
+                });
+
+
+            console.log(Id);
+        });
+
+        // endregion
+
+
+
+        // region Load Purpose Dropdown
+
+        $.ajax({
+            type: 'Get',
+            url: '/Purpose/PurposeList'
+        })
+            .done(function (result) {
+                if (result.status) {
+                    $('#iPurposeId').append('<option value="">Select</option>');
+                    $.each(result.Data, function () {
+                        //$('#iSTenantName').append('<option value="' + this.Id + '">' + this.Name + '</option>');
+                        $('#iPurposeId').append('<option value="' + this.Id + '">' + this.Name + '</option>');
+                    });
+                }
+            })
+            .fail(function (xhr) {
+                alert("error");
+            });
+
+        // endregion
+
+
+
+        function saveData() {
+            $("#inputForm").submit();
+        }
+        $("#inputForm").on("submit", function (event) {
+            event.preventDefault();
+            var $this = $(this);
+            var frmValues = $this.serialize();
+            var isValid = $("#inputForm").valid();
+
+            if (isValid == false) {
+
+            }
+
+            else {
+                $.ajax({
+                    type: 'POST',
+                    url: '/Advance/Save',
+                    data: frmValues
+                })
+                    .done(function (result) {
+                        if (result) {
+                            alert(result.info);
+                            $('#inputModal').modal('hide');
+                            ReloadTable();
+                        }
+                    })
+                    .fail(function (xhr) {
+                        alert("error");
+                    });
+            }
+        });
+
+
+        function Confirm(Id) {
+
+            if (confirm('Are You Sure You Want to Confrim?')) {
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/Advance/Confirm',
+                    data: { id: Id }
+                })
+                    .done(function (result) {
+                        if (result) {
+                            alert(result.info);
+                            table.ajax.reload();
+                        }
+                    })
+                    .fail(function (xhr) {
+                        alert("error");
+                    });
+            }
+
+            else {
+                return;
+            }
+        }
+
+
+        function EditData(Id) {
+
+            $('inputForm').trigger('reset');
+
+            $.ajax({
+                type: 'Get',
+                url: '/Employee/EmployeeGrades'
+            })
+                .done(function (result) {
+                    if (result.status) {
+
+                        $('iEmployeeGrade').empty();
+
+                        $.each(result.Data, function () {
+                            $('#iEmployeeGrade').append('<option value="' + this.Id + '">' + this.Grades + '</option>');
+                            console.log(this.Grades);
+                        });
+                    }
+                })
+                .fail(function (xhr) {
+                    alert("error");
+                });
+
+
+            $.ajax({
+                type: 'Get',
+                url: '/District/SubDistricts'
+            })
+                .done(function (result) {
+                    if (result.status) {
+                        $('#iSubDistrictId').append('<option value="">Select</option>');
+                        $.each(result.Data, function () {
+                            $('#iSubDistrictId').append('<option value="' + this.Id + '">' + this.Name + '</option>');
+                        });
+                    }
+                })
+                .fail(function (xhr) {
+                    alert("error");
+                });
+
+
+            $.ajax({
+                type: 'POST',
+                url: '/Advance/GetDetails',
+                data: { id: Id }
+            })
+                .done(function (result) {
+                    if (result.status) {
+
+                        var vId = result.Data.map(a => a.Id);
+                        var vAdvanceType = result.Data.map(a => a.AdvanceType);
+                        var vAdvanceStatus = result.Data.map(a => a.AdvanceStatus);
+
+                        var vMemoNo = result.Data.map(a => a.MemoNo);
+                        var vEmployeeCode = result.Data.map(a => a.EmployeeCode);
+                        var vEmployeeId = result.Data.map(a => a.EmployeeId);
+                        var vGradeId = result.Data.map(a => a.GradeId);
+                        var vEmployeeName = result.Data.map(a => a.EmployeeName);
+                        var vEmployeeGrade = result.Data.map(a => a.EmployeeGrade);
+                        var vFromDateText = result.Data.map(a => a.FromDateText);
+                        var vToDateText = result.Data.map(a => a.ToDateText);
+                        var vDistrictId = result.Data.map(a => a.DistrictId);
+                        var vSubDistrictId = result.Data.map(a => a.SubDistrictId);
+                        var vDescription = result.Data.map(a => a.Description);
+                        var vLocation = result.Data.map(a => a.Location);
+                        var vTrainer = result.Data.map(a => a.Trainer);
+                        var vTopic = result.Data.map(a => a.Topic);
+
+
+                        console.log("Grade =" + vEmployeeGrade);
+
+                        $('#employeeSearchButton').hide();
+
+
+                        if (vAdvanceType == "Travelling") {
+                            $('#Travelling').prop("checked", true);
+                            $('#Training').prop('disabled', true);
+                            $('#Travelling').prop('disabled', false);
+
+                            $('#iDistrictId').show();
+                            $('#iSubDistrictId').show();
+                            $('#lSubDistrictId').show();
+                            $('#lDistrictId').show();
+                            $('#iTrainer').hide();
+                            $('#iTopic').hide();
+                            $('#lTrainer').hide();
+                            $('#lTopic').hide();
+                        }
+                        else if (vAdvanceType == "Training") {
+                            $('#Training').prop("checked", true);
+                            $('#Travelling').prop('disabled', true);
+                            $('#Training').prop('disabled', false);
+
+                            $('#iDistrictId').hide();
+                            $('#iSubDistrictId').hide();
+                            $('#lSubDistrictId').hide();
+                            $('#lDistrictId').hide();
+                            $('#iTrainer').show();
+                            $('#iTopic').show();
+                            $('#lTrainer').show();
+                            $('#lTopic').show();
+                        }
+
+                        if (vAdvanceStatus == "Confirmed") {
+
+                            $('#iId').val(vId);
+                            $('#iMemoNo').val(vMemoNo).prop('readonly', true);
+                            $('#iEmployeeCode').val(vEmployeeCode).prop('readonly', true);
+                            $('#iFromDate').val(vFromDateText).prop('readonly', true);
+                            $('#iToDate').val(vToDateText).prop('readonly', true);
+                            $('#iEmployeeId').val(vEmployeeId).prop('disabled', true);
+                            //$('#iEmployeeGrade').val(vGradeId).prop('readonly', true);
+                            $('#iEmployeeGrade').val(vEmployeeGrade).prop('readonly', true);
+                            $('#iDistrictId').val(vDistrictId).prop('disabled', true);
+                            $('#iSubDistrictId').val(vSubDistrictId).prop('disabled', true);
+                            $('#iLocation').val(vLocation).prop('readonly', true);
+                            $('#iDescription').val(vDescription).prop('readonly', true);
+                            $('#iTrainer').val(vTrainer).prop('readonly', true);
+                            $('#iTopic').val(vTopic).prop('readonly', true);
+
+                            $('#submit_button').hide();
+                            $('#iPurposeId').hide();
+                            $('#addButton').hide();
+                            $('#ilPurposeId').hide();
+                            $('#iQty').hide();
+                            $('#iAmount').hide();
+                        }
+
+
+                        else if (vAdvanceStatus == "Not Confirmed") {
+
+                            $('#iId').val(vId);
+                            $('#iMemoNo').val(vMemoNo).prop('readonly', false);
+                            $('#iEmployeeCode').val(vEmployeeCode).prop('readonly', false);
+                            $('#iFromDate').val(vFromDateText).prop('readonly', false);
+                            $('#iToDate').val(vToDateText).prop('readonly', false);
+                            $('#iEmployeeId').val(vEmployeeId).prop('disabled', false); 
+                            //$('#iEmployeeGrade').val(vGradeId).prop('readonly', false);
+                            $('#iEmployeeGrade').val(vEmployeeGrade).prop('readonly', false);
+                            $('#iDistrictId').val(vDistrictId).prop('disabled', false);
+                            $('#iSubDistrictId').val(vSubDistrictId).prop('disabled', false);
+                            $('#iLocation').val(vLocation).prop('readonly', false);
+                            $('#iDescription').val(vDescription).prop('readonly', false);
+                            $('#iTrainer').val(vTrainer).prop('readonly', false);
+                            $('#iTopic').val(vTopic).prop('readonly', false);
+
+
+                            $('#submit_button').show();
+                            $('#iPurposeId').show();
+                            $('#addButton').show();
+                            $('#ilPurposeId').show();
+                            $('#iQty').show();
+                            $('#iAmount').show();
+                        }
+
+
+
+                        //$('#iId').val(vId);
+                        //$('#iMemoNo').val(vMemoNo);
+                        //$('#iEmployeeCode').val(vEmployeeCode);
+                        //$('#iFromDate').val(vFromDateText);
+                        //$('#iToDate').val(vToDateText);
+                        //$('#iEmployeeId').val(vEmployeeId);
+                        //$('#iEmployeeGrade').val(vEmployeeGrade);
+                        //$('#iDistrictId').val(vDistrictId);
+                        //$('#iSubDistrictId').val(vSubDistrictId);
+                        //$('#iLocation').val(vLocation);
+                        //$('#iDescription').val(vDescription);
+                        //$('#iTrainer').val(vTrainer);
+                        //$('#iTopic').val(vTopic);
+
+                        console.log(result.Data);
+                        $('#inputModal').modal('show');
+                    }
+                })
+                .fail(function (xhr) {
+                    alert("error");
+                });
+
+
+            $.ajax({
+                type: 'POST',
+                url: '/Advance/GetTableDetails',
+                data: { id: Id }
+            })
+                .done(function (result) {
+                    if (result.status) {
+
+                        $('#AdvanceDetailsTable').empty();
+
+                        var vId = result.Data.map(a => a.AdvanceDetailsId);
+                        var vPurposeId = result.Data.map(a => a.PurposeId);
+                        var vPurposeName = result.Data.map(a => a.PurposeName);
+                        var vQty = result.Data.map(a => a.Qty);
+                        var vAmount = result.Data.map(a => a.Amount);
+                        var vTotal = result.Data.map(a => a.Total);
+                        grandTotal = 0;
+
+                        console.log("Table Length = " + vId.length);
+
+                        console.log("Table Value = " + vPurposeName);
+
+                        for (var i = 0; i < vPurposeId.length; i++) {
+                            var serial = i + 1;
+                            grandTotal = grandTotal + vTotal[i];
+
+                            var serialTd = "<td> " + serial + " </td>"
+                            var purposeTd = "<td> " + vPurposeName[i] + " </td>"
+                            var qtyTd = "<td> " + vQty[i] + " </td>"
+                            var amountTd = "<td> " + vAmount[i] + " </td>"
+                            var totalTd = "<td> " + vTotal[i] + " </td>"
+
+                            var createNewRow = "<tr>" + serialTd + purposeTd + qtyTd + amountTd + totalTd + "</tr>"
+
+                            $('#AdvanceDetailsTable').append(createNewRow);
+                        }
+
+
+                        $('#iGrandTotal').val(grandTotal);
+                    }
+                })
+                .fail(function (xhr) {
+                    alert("error");
+                });
+        }
+
+        // endregion
+
+
+        // endregion
+
+
+        function ReloadTable() {
+            table.ajax.reload();
+        }
+
+
+        // #region Table Data
+
+
+        var table = $('#Advance').DataTable({
+            serverSide: true,
+            processing: true,
+            ajax: {
+                url: '/Advance/GetList',
+                type: 'POST',
+                dataType: "JSON"
+            },
+            columns: [
+                { data: "EmployeeName" },
+                { data: "AdvanceType" },
+                { data: "MemoNo" },
+                { data: "FromDateText" },
+                { data: "ToDateText" },
+                { data: "GrandTotal" },
+                { data: "AdvanceStatus" },
+                {
+                    data: null, width: 50, orderable: false, render: function (data, type, row) {
+                        console.log(row.AdvanceStatus);
+                        if (row.AdvanceStatus == "Not Confirmed") {
+                            return "<a href='javascript:Confirm(" + row.Id + ");'><i class='fa fa-check'></i></a>&nbsp;&nbsp;<a href='javascript:EditData(" + row.Id + ");'><i class='fa fa-edit'></i></a>&nbsp;&nbsp;<a href='javascript:DeleteData(" + row.Id + ");'><i class='fa fa-trash'></i></a>";
+                        }
+                        else {
+                            return "&nbsp;&nbsp;&nbsp;<a href='javascript:EditData(" + row.Id + ");'><i class='fa fa-eye'></i></a>&nbsp;&nbsp;<a href='javascript:DeleteData(" + row.Id + ");'><i class='fa fa-trash'></i></a>";
+                        }
+                    }
+                }
+            ],
+            dom: '<"top"Bi>tr<"bottom"p><"clear">',
+            lengthMenu:
+                [[10, 25, 50, 100, 500, -1], ['10 rows', '25 rows', '50 rows', '100 rows', '500 rows', 'Show all']],
+            buttons: ['pageLength', 'print']
+        });
+        // #endregion
+
+
+
+
+        // region check Radio Button Value
+
+        $("input[type='radio']").on('change', function () {
+
+            var selectedValue = $('input[type=radio][name=AdvanceType]:checked').attr('id')
+            console.log(selectedValue);
+
+
+            if (selectedValue == "Travelling") {
+                $('#iTrainer').hide();
+                $('#iTopic').hide();
+                $('#lTrainer').hide();
+                $('#lTopic').hide();
+
+                $('#iDistrictId').show();
+                $('#iSubDistrictId').show();
+                $('#lDistrictId').show();
+                $('#lSubDistrictId').show();
+            }
+            else {
+                $('#iTrainer').show();
+                $('#iTopic').show();
+                $('#iTopic').show();
+                $('#lTrainer').show();
+
+                $('#iDistrictId').hide();
+                $('#iSubDistrictId').hide();
+                $('#lDistrictId').hide();
+                $('#lSubDistrictId').hide();
+            }
+        });
+
+        // endregion
+
+
+        // #region Delete Data
+        function DeleteData(Id) {
+
+            if (confirm('Are You Sure You Want to Delete?')) {
+                $.ajax({
+                    type: 'POST',
+                    url: '/Advance/Delete',
+                    data: { id: Id }
+                })
+                    .done(function (result) {
+                        if (result) {
+                            alert(result.info);
+                            table.ajax.reload();
+                        }
+                    })
+                    .fail(function (xhr) {
+                        alert("error");
+                    });
+            }
+            else {
+                return;
+            }
+
+        }
+        // #endregion
+
+
+        // region Search
+
+        function search() {
+            $('#searchModal').modal('toggle');
+        }
+
+        function setSearchVals(sMemoNo, sEmployeeId, sFromDate, sToDate) {
+            table.columns(0).search(sMemoNo);
+            table.columns(1).search(sEmployeeId);
+            table.columns(2).search(sFromDate);
+            table.columns(3).search(sToDate);           
+        }
+        function searchInTable() {
+            setSearchVals($('#sMemoNo').val(), $('#sEmployeeId').val(), $('#sFromDate').val(), $('#sToDate').val());
+            $('#searchModal').modal('hide');
+            table.ajax.reload();
+        }        
+
+        // endregion
+
+
+        function ShowInputModal() {
+
+            var tableLength = table.data().count();
+
+            console.log(tableLength);
+
+            var memoNo = "adv" + Math.floor(Math.random() * 900) + 100;
+
+            console.log("ShowInputModal");
+
+            $("#inputForm").trigger("reset");
+            $('#iId').val(0);
+            $('#inputModal').modal('show');
+            $('#Travelling').prop("checked", true);
+            $('#employeeSearchButton').hide();
+            $('#AdvanceDetailsTable').empty();
+            grandTotal = 0;
+            $('#iGrandTotal').val('');
+            $('#iMemoNo').val(memoNo);
+
+   
+            $('#iMemoNo').prop('readonly', false);
+            $('#iEmployeeCode').prop('readonly', false);
+            $('#iFromDate').prop('readonly', false);
+            $('#iToDate').prop('readonly', false);
+            $('#iEmployeeId').prop('disabled', false);            
+            $('#iEmployeeGrade').prop('readonly', false);
+            $('#iDistrictId').prop('disabled', false);
+            $('#iSubDistrictId').prop('disabled', false);
+            $('#iLocation').prop('readonly', false);
+            $('#iDescription').prop('readonly', false);
+            $('#iTrainer').prop('readonly', false);
+            $('#iTopic').prop('readonly', false);
+
+            $('#submit_button').show();
+            $('#iPurposeId').show();
+            $('#addButton').show();
+            $('#ilPurposeId').show();
+            $('#iQty').show();
+            $('#iAmount').show();
+        }
+
+
+
+        $(function () {
+            $('#iFromDate').datetimepicker({
+                format: 'YYYY-MM-DD',
+            });
+        });
+
+        $(function () {
+            $('#iToDate').datetimepicker({
+                format: 'YYYY-MM-DD',
+            });
+        });
+
+
+        $(function () {
+            $('#sFromDate').datetimepicker({
+                format: 'YYYY-MM-DD',
+            });
+        });
+
+        $(function () {
+            $('#sToDate').datetimepicker({
+                format: 'YYYY-MM-DD',
+            });
+        });
+
+
+    </script>
+}

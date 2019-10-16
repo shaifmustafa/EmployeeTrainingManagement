@@ -1,0 +1,179 @@
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.dll.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.pdb
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csc.exe
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csc.exe.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csc.rsp
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csi.exe
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csi.exe.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csi.rsp
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.Managed.Core.targets
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.AppContext.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Collections.Immutable.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Console.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.IO.Compression.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.IO.FileSystem.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.IO.Pipes.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Reflection.Metadata.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.AccessControl.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Claims.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Principal.Windows.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.ValueTuple.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Xml.XmlDocument.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Xml.XPath.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\vbc.exe
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\vbc.exe.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\vbc.rsp
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\VBCSCompiler.exe
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\VBCSCompiler.exe.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\Antlr3.Runtime.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\EntityFramework.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\EntityFramework.SqlServer.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\Microsoft.Web.Infrastructure.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\Newtonsoft.Json.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Linq.Dynamic.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Helpers.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Mvc.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Optimization.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Razor.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.Deployment.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.Razor.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.BLL.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Models.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Repository.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\WebGrease.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.BLL.pdb
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.BLL.dll.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Models.pdb
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Models.dll.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Repository.pdb
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Repository.dll.config
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\EntityFramework.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\EntityFramework.SqlServer.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Helpers.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Mvc.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Optimization.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Razor.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.Deployment.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.Razor.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\Newtonsoft.Json.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\Antlr3.Runtime.pdb
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\obj\Debug\TraineeManagement.csprojAssemblyReference.cache
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\obj\Debug\TraineeManagement.csproj.CoreCompileInputs.cache
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\obj\Debug\TraineeManagement.csproj.CopyComplete
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\obj\Debug\TraineeManagement.dll
+G:\NK Softwares\Trainee Management\TraineeManagement\TraineeManagement\obj\Debug\TraineeManagement.pdb
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.dll.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.pdb
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csc.exe
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csc.exe.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csc.rsp
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csi.exe
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csi.exe.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\csi.rsp
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.AppContext.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Collections.Immutable.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Console.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.IO.Compression.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.IO.FileSystem.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.IO.Pipes.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Reflection.Metadata.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.AccessControl.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Claims.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Security.Principal.Windows.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.ValueTuple.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Xml.XPath.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\vbc.exe
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\vbc.exe.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\vbc.rsp
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\VBCSCompiler.exe
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\roslyn\VBCSCompiler.exe.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\Antlr3.Runtime.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\EntityFramework.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\EntityFramework.SqlServer.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\Microsoft.Web.Infrastructure.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\Newtonsoft.Json.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Linq.Dynamic.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Helpers.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Mvc.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Optimization.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Razor.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.Deployment.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.Razor.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.BLL.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Models.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Repository.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\WebGrease.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.BLL.pdb
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.BLL.dll.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Models.pdb
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Models.dll.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Repository.pdb
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\TraineeManagement.Repository.dll.config
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\EntityFramework.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\EntityFramework.SqlServer.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Helpers.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Mvc.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Optimization.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.Razor.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.Deployment.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\System.Web.WebPages.Razor.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\Newtonsoft.Json.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\Antlr3.Runtime.pdb
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\obj\Debug\TraineeManagement.csprojAssemblyReference.cache
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\obj\Debug\TraineeManagement.csproj.CopyComplete
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\obj\Debug\TraineeManagement.dll
+G:\Mamun Sir Assignment\Trainee Management\TraineeManagement\TraineeManagement\obj\Debug\TraineeManagement.pdb
